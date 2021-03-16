@@ -52,3 +52,5 @@ SELECT name, ROUND(population/1000000, 2), ROUND(gdp/1000000000, 2) AS gdp FROM 
 SELECT name, ROUND(gdp/population, -3) FROM world WHERE gdp >= 1000000000000
 
 SELECT name, capital FROM world WHERE LENGTH(name) = LENGTH(capital)
+
+SELECT name, capital FROM world WHERE LEFT(name, 1) = LEFT(capital, 1) AND name <> capital
