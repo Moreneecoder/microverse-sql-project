@@ -44,3 +44,5 @@ SELECT name, population FROM world WHERE name IN ('France', 'Germany', 'Italy')
 SELECT name FROM world WHERE name LIKE '%United%'
 
 SELECT name, population, area FROM world WHERE area > 3000000 OR  population > 250000000
+
+SELECT name, population, area FROM world WHERE (population > 250000000 AND area <= 3000000) OR (population <= 250000000 AND area > 3000000)
