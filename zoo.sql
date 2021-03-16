@@ -42,3 +42,5 @@ SELECT name, (population/1000000) AS population FROM world WHERE continent = 'So
 SELECT name, population FROM world WHERE name IN ('France', 'Germany', 'Italy')
 
 SELECT name FROM world WHERE name LIKE '%United%'
+
+SELECT name, population, area FROM world WHERE area > 3000000 OR  population > 250000000
