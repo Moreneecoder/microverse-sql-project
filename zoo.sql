@@ -24,3 +24,6 @@ SELECT name FROM world
 
 SELECT name FROM world
   WHERE name LIKE '%oo%'
+
+SELECT name FROM world
+  WHERE (LENGTH(name) - LENGTH(REPLACE(name, 'a', ''))) >= 3
