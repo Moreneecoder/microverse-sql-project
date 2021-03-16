@@ -27,3 +27,7 @@ SELECT name FROM world
 
 SELECT name FROM world
   WHERE (LENGTH(name) - LENGTH(REPLACE(name, 'a', ''))) >= 3
+
+SELECT name FROM world
+ WHERE name LIKE '_t%'
+ORDER BY name
