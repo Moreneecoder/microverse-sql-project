@@ -36,3 +36,5 @@ SELECT name FROM world
  WHERE LENGTH(name) = 4
 
 SELECT name, gdp/population FROM world WHERE population >= 200000000
+
+SELECT name, (population/1000000) AS population FROM world WHERE continent = 'South America'
