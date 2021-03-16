@@ -54,3 +54,28 @@ SELECT name, ROUND(gdp/population, -3) FROM world WHERE gdp >= 1000000000000
 SELECT name, capital FROM world WHERE LENGTH(name) = LENGTH(capital)
 
 SELECT name, capital FROM world WHERE LEFT(name, 1) = LEFT(capital, 1) AND name <> capital
+
+SELECT name
+  FROM world
+ WHERE name LIKE 'U%'
+
+SELECT population
+  FROM world
+ WHERE name = 'United Kingdom'
+
+'name' should be name
+
+Nauru	990
+
+SELECT name, population
+  FROM world
+ WHERE continent IN ('Europe', 'Asia')
+
+SELECT name FROM world
+ WHERE name IN ('Cuba', 'Togo')
+
+
+Brazil
+Colombia
+
+
