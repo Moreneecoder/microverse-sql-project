@@ -34,3 +34,5 @@ ORDER BY name
 
 SELECT name FROM world
  WHERE LENGTH(name) = 4
+
+SELECT name, gdp/population FROM world WHERE population >= 200000000
