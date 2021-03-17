@@ -235,3 +235,20 @@ connect the primary keys of movie and actor via the casting table
 A Bronx Tale	1993
 Bang the Drum Slowly	1973
 Limitless	2011
+
+SELECT teacher.name, dept.name FROM teacher LEFT OUTER JOIN dept ON (teacher.dept = dept.i
+
+SELECT dept.name FROM teacher JOIN dept ON (dept.id = teacher.dept) WHERE teacher.name = 'Cutflower'
+
+SELECT dept.name, COUNT(teacher.name) FROM teacher RIGHT JOIN dept ON dept.id = teacher.dept GROUP BY dept.name
+
+display 0 in result column for all teachers without department
+
+'four' for Throd
+
+Shrivell	Computing
+Throd	Computing
+Splint	Computing
+Spiregrain	Other
+Cutflower	Other
+Deadyawn	Other
